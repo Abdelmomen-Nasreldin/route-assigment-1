@@ -11,6 +11,8 @@ import { PorfolioComponent } from './Components/porfolio/porfolio.component';
 import { MainComponent } from './Components/main/main.component';
 import { PorfolioCardComponent } from './Components/porfolio-card/porfolio-card.component';
 
+import { NgIconsModule } from '@ng-icons/core';
+import {bootstrapFacebook, bootstrapGlobe, bootstrapLinkedin, bootstrapTwitter} from '@ng-icons/bootstrap-icons'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { PorfolioCardComponent } from './Components/porfolio-card/porfolio-card.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgIconsModule.withIcons({ bootstrapFacebook, bootstrapGlobe, bootstrapLinkedin, bootstrapTwitter }),
   ],
   providers: [],
   bootstrap: [AppComponent]
