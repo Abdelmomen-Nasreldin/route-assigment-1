@@ -7,12 +7,14 @@ import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { AboutComponent } from './Components/about/about.component';
 import { ContactComponent } from './Components/contact/contact.component';
-import { PorfolioComponent } from './Components/porfolio/porfolio.component';
+import { PortfolioComponent } from './Components/portfolio/portfolio.component';
 import { MainComponent } from './Components/main/main.component';
-import { PorfolioCardComponent } from './Components/porfolio-card/porfolio-card.component';
+import { PortfolioCardComponent } from './Components/portfolio-card/portfolio-card.component';
 
 import { NgIconsModule } from '@ng-icons/core';
-import {bootstrapFacebook, bootstrapGlobe, bootstrapLinkedin, bootstrapTwitter} from '@ng-icons/bootstrap-icons'
+import {bootstrapFacebook, bootstrapGlobe, bootstrapLinkedin, bootstrapTwitter} from '@ng-icons/bootstrap-icons';
+import { HomeComponent } from './Components/home/home.component';
+import { NotFoundComponent } from './Components/not-found/not-found.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,9 +22,11 @@ import {bootstrapFacebook, bootstrapGlobe, bootstrapLinkedin, bootstrapTwitter} 
     FooterComponent,
     AboutComponent,
     ContactComponent,
-    PorfolioComponent,
+    PortfolioComponent,
     MainComponent,
-    PorfolioCardComponent
+    PortfolioCardComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
