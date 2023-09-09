@@ -13,7 +13,7 @@
         #navMenu
       >
         <li *ngFor="let page of pages.slice(1)" class="px-5 py-3 font-bold capitalize">
-          <a [routerLink]="page.path"> {{page.name}} </a>
+          <a [routerLink]="page.path" routerLinkActive="active" class="p-2"> {{page.name}} </a>
         </li>
       </ul>
     </nav>

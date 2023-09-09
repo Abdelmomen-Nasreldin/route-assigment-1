@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { Page } from 'src/assets/interfaces';
+import { Page } from 'src/assets/interfaces/interfaces';
 const pagesData: Page[] = [
   {
     name: 'home',
