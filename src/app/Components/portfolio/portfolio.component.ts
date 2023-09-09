@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent {
-
+  cards:string[] = ["port1.png","port2.png","port3.png","port1.png","port2.png","port3.png"]
 }
