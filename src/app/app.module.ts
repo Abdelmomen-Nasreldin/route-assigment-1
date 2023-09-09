@@ -12,9 +12,10 @@ import { MainComponent } from './Components/main/main.component';
 import { PortfolioCardComponent } from './Components/portfolio-card/portfolio-card.component';
 
 import { NgIconsModule } from '@ng-icons/core';
-import {bootstrapFacebook, bootstrapGlobe, bootstrapLinkedin, bootstrapTwitter} from '@ng-icons/bootstrap-icons';
+import {bootstrapFacebook, bootstrapGlobe, bootstrapLinkedin, bootstrapTwitter, bootstrapStarFill} from '@ng-icons/bootstrap-icons';
 import { HomeComponent } from './Components/home/home.component';
-import { NotFoundComponent } from './Components/not-found/not-found.component'
+import { NotFoundComponent } from './Components/not-found/not-found.component';
+import { StarIconComponent } from './Components/star-icon/star-icon.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,12 +27,13 @@ import { NotFoundComponent } from './Components/not-found/not-found.component'
     MainComponent,
     PortfolioCardComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    StarIconComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgIconsModule.withIcons({ bootstrapFacebook, bootstrapGlobe, bootstrapLinkedin, bootstrapTwitter }),
+    NgIconsModule.withIcons({ bootstrapFacebook, bootstrapGlobe, bootstrapLinkedin, bootstrapTwitter, bootstrapStarFill }),
   ],
   providers: [],
   bootstrap: [AppComponent]
