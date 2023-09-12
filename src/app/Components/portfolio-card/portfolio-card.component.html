@@ -1,1 +1,7 @@
-<p>porfolio-card works!</p>
+<div class="relative rounded-xl overflow-hidden cursor-pointer hover:show" #card (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()" (click)="toggleModal()">
+  <img src="assets/images/{{imgSrc}}" alt="card image">
+  <div class="{{isShown? 'opacity-100':'opacity-0'}} overLay bg-[#29b198ea] w-full h-full absolute top-0 left-0 flex justify-center items-center transition-opacity duration-700">
+    <ng-icon class="text-[6rem] text-white" name="bootstrapPlusLg"></ng-icon>
+  </div>
+  <app-modal [showModal]="showModal" [imgSrc]="imgSrc"></app-modal>
+</div>
